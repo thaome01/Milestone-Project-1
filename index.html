@@ -1,14 +1,40 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
+    <!-- External Link -->
     <link rel="stylesheet" href="style.css" />
-    <script src="game.js"></script>
+    <script src="index.js"></script>
   </head>
-  <body></body>
+  <body class="body">
+    <!-- To Sart the Game -->
+
+    <!-- 30 second Countdown -->
+    <p id="countDown">START!</p>
+
+    <!-- First player Controller -->
+    <section class="section">
+      <button class="button1" type="button" onClick="onClick()">ENTER</button>
+      <p>PLAYER ONE: <a id="clicks"></a></p>
+    </section>
+
+    <!-- Second Player Controller-->
+    <section class="sectionTwo">
+      <button class="button2" type="button" onClick="spaceClick()">
+        SPACE
+      </button>
+      <p>PLAYER TWO: <a id="press"></a></p>
+    </section>
+
+    <!-- Background Music-->
+    <audio autoplay loop>
+      <source
+        src="./audio/Mortal Kombat Theme Song Original.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+  </body>
 </html>
