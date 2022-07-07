@@ -5,13 +5,15 @@ window.alert("Player One = Enter Key---Player Two = Space key                   
 
 //Countdown to 30 Second//
 
+
+
 let timeleft = '30';
-let countThree = '3';
+
 
 let downloadTimer = setInterval(function () {
     if (timeleft <= 0) {
         clearInterval(downloadTimer);
-        document.getElementById("countDown").innerHTML = "DONE!";
+        document.getElementById("countDown").innerHTML = "TIMES UP!";
     } else {
         document.getElementById("countDown").innerHTML = "CLOCK IS TICKING: " + timeleft + " SECONDS";
     }
@@ -24,12 +26,24 @@ let downloadTimer = setInterval(function () {
 
 let playerOne = 0;
 
+
+
 document.addEventListener('keyup', function (e) {
+
     if (e.key === "Enter") {
         playerOne++;
         document.getElementById("clicks").innerHTML = playerOne;
+    } if (playerOne >= 5) {
+        document.getElementById("clicks").innerHTML = "YOU ARE THE WINNER!";
+        window.alert("PLAYER ONE IS THE WINNER!");
+        clearInterval(downloadTimer);
     }
 })
+
+
+
+
+
 
 
 //Space Bar keyboard//
@@ -40,10 +54,16 @@ document.addEventListener('keyup', function (e) {
     if (e.key === " ") {
         playerTwo++;
         document.getElementById("press").innerHTML = playerTwo;
+    } if (playerTwo >= 5) {
+        document.getElementById("press").innerHTML = "YOU ARE THE WINNER!";
+        window.alert("PLAYER TWO IS THE WINNER!");
+        clearInterval(downloadTimer);
     }
 })
 
-//Start sound game//
+// restart button //
+
+
 
 
 
