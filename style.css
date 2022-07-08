@@ -5,6 +5,22 @@
   margin-top: 250px;
   position: absolute;
 }
+
+/* Start MENU */
+
+#menu {
+  margin: auto;
+  left: 385px;
+  bottom: -200px;
+  border: solid 20px;
+  padding: 100px;
+  position: absolute;
+  height: 600px;
+  width: 900px;
+  display: block;
+  background-color: aquamarine;
+}
+
 /* Player Enter Layout */
 .section {
   float: right;
@@ -57,4 +73,5 @@
   border: solid;
   padding: 20px;
   border-radius: 25px;
+  background-color: yellow;
 }

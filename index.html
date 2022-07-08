@@ -12,20 +12,31 @@
   <body class="body">
     <!-- To Sart the Game -->
 
+    <section id="menu">
+      <button id="gameStart" onclick="myStart()">
+        CLICK HERE TO START THE GAME!
+      </button>
+      <h1>HOW DO YOU PLAY THE GAME?</h1>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+
     <!-- 30 second Countdown -->
     <p id="countDown">START!</p>
 
     <!-- First player Controller -->
     <section class="section">
-      <button class="button1" type="button" onClick="onClick()">ENTER</button>
+      <button class="button1" type="button">ENTER</button>
       <p>PLAYER ONE: <a id="clicks">0</a></p>
     </section>
 
     <!-- Second Player Controller-->
     <section class="sectionTwo">
-      <button class="button2" type="button" onClick="spaceClick()">
-        SPACE
-      </button>
+      <button class="button2" type="button">SPACE</button>
       <p>PLAYER TWO: <a id="press">0</a></p>
     </section>
 
@@ -36,9 +47,10 @@
         type="audio/mpeg"
       />
     </audio>
+
     <!-- To restart the game -->
     <button class="restart" type="button" onClick="window.location.reload();">
-      Restart Game!
+      RESTART HERE!
     </button>
   </body>
 </html>
