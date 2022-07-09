@@ -15,6 +15,7 @@ function myStart() { //creating a function expression with onclick=myStart() in 
         if (timeleft <= 0) { //if timeleft less than or equal to 0, whatever is inside the if/else statement will appear//
             clearInterval(downloadTimer);
             document.getElementById("countDown").innerHTML = "TIMES UP!"; //After 0, TIMES UP will show up//
+
             window.alert("TRY AGAIN, YOU BOTH DID NOT BEAT THE TIME!"); //notification will pop??
         } else {
             document.getElementById("countDown").innerHTML = "CLOCK IS TICKING: " + timeleft + " SECONDS"; //timeleft is greater than 30 so it will go down to 0//
@@ -45,6 +46,7 @@ document.addEventListener('keyup', function (e) {  //Basically this function is 
 
 //Space Bar keyboard//
 
+//this is basically a repeat like player two//
 let playerTwo = 0;
 
 document.addEventListener('keyup', function (e) {
