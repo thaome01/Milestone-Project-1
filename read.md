@@ -4,6 +4,8 @@ The name of my project is called "CLICKED TO HUNDRED"
 
 2. PROJECTION DESCRIPTION
 
+This game is created with HTML, CSS, and JAVASCRIPT.
+
 My game is a two player game. In my game, player one and player two will have to race
 to see who will reach to one hundred points. I have built a interaction system for my
 players to reach one hundred points. Player one will use the "ENTER key" on the keyboard
