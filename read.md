@@ -18,4 +18,4 @@ and will have to restart the game for the individual to actually win the game. W
 saying "TRY AGAIN, YOU BOTH DID NOT BEAT THE TIME!". In a game, I beleive a restart button is a important function for gamers because
 it helps players exercise to understand how to play the game all over again or maybe the players feel like they are being cheated, with that happening the restart button will help the players for redemption.
 
-I will like to thanks https://www.w3schools.com/, https://stackoverflow.com/, https://jsfiddle.net/, https://developer.mozilla.org/en-US/docs/Web, Professor Henry Ebomah and assistant Jeremy Ma for helping me to get through my milestone project!
+I will like to thanks https://www.w3schools.com/, https://stackoverflow.com/, https://jsfiddle.net/, https://developer.mozilla.org/en-US/docs/Web, https://css-tricks.com/, Professor Henry Ebomah and assistant Jeremy Ma for helping me to get through my milestone project!
