@@ -1,5 +1,6 @@
+/* The whole body is being shifted to center */
 .body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: fantasy;
   background-image: url("img/shape.jpg");
   text-align: center;
   margin-top: 250px;
@@ -19,41 +20,16 @@
   width: 900px;
   display: block;
   background-color: aquamarine;
+  font-size: x-large;
+  font-family: fantasy;
 }
 
-/* Player Enter Layout */
-.section {
-  float: right;
-  margin-right: 200px;
-  margin-top: 100px;
-  border: dotted 5px;
-  padding: 50px;
-  width: 500px;
-  border-radius: 30px;
-}
-
-.button1 {
-  width: 250px;
-  height: 50px;
-  background: yellow;
-  border-radius: 30px;
-}
-/* Player Space Layout */
-.sectionTwo {
-  float: left;
-  margin-left: 300px;
-  margin-top: 100px;
-  border: dotted 5px;
-  padding: 50px;
-  width: 500px;
-  border-radius: 30px;
-}
-
-.button2 {
-  width: 250px;
-  height: 50px;
-  background: yellow;
-  border-radius: 30px;
+#gameStart {
+  border: solid 5px;
+  padding: 20px;
+  background-color: yellow;
+  font-size: x-large;
+  font-family: fantasy;
 }
 
 /* CLOCK LAYOUT */
@@ -74,4 +50,51 @@
   padding: 20px;
   border-radius: 25px;
   background-color: yellow;
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+/* Player Enter Layout */
+.section {
+  float: right;
+  margin-right: 200px;
+  margin-top: 100px;
+  border: dotted 5px;
+  padding: 50px;
+  width: 500px;
+  border-radius: 30px;
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+.button1 {
+  width: 250px;
+  height: 50px;
+  background: yellow;
+  border-radius: 30px;
+  font-family: fantasy;
+  font-size: x-large;
+}
+
+/* Player Space Layout */
+
+.sectionTwo {
+  float: left;
+  margin-left: 300px;
+  margin-top: 100px;
+  border: dotted 5px;
+  padding: 50px;
+  width: 500px;
+  border-radius: 30px;
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+.button2 {
+  width: 250px;
+  height: 50px;
+  background: yellow;
+  border-radius: 30px;
+  font-family: fantasy;
+  font-size: x-large;
 }
