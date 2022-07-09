@@ -1,29 +1,29 @@
 //My function to START THE GAME//
 
 
-function myStart() {
-    let s = document.getElementById("menu");
-    if (s.style.display === "none") {
-        s.document.style.display = "block";
+function myStart() { //creating a function expression with onclick=myStart() in index.html//
+    let s = document.getElementById("menu");  //creating a variable equal to document.getElementById("menu")//
+    if (s.style.display === "none") { //if my variable s is equal to none, my display will be hidden//
+        s.document.style.display = "block";//variable is assign to block so which mean it display will stay in position//
     } else {
-        s.style.display = "none";
+        s.style.display = "none"; //variable is equal to none, means when I click the button it will disappear//
 
         //Countdown to 30 Second//
 
-    } let timeleft = '30';
+    } let timeleft = '30'; //variable equal to 30 so I can set up 30 second
 
-    let downloadTimer = setInterval(function () {
-        if (timeleft <= -1) {
+    let downloadTimer = setInterval(function () { //created setInterval function and assign to a variable name downloadTimer
+        if (timeleft <= 0) { //if timeleft less than or equal to 0, whatever is inside the if/else statement will appear//
             clearInterval(downloadTimer);
-            document.getElementById("countDown").innerHTML = "TIMES UP!";
-            window.alert("TRY AGAIN, YOU BOTH DID NOT BEAT THE TIME!");
+            document.getElementById("countDown").innerHTML = "TIMES UP!"; //After 0, TIMES UP will show up//
+            window.alert("TRY AGAIN, YOU BOTH DID NOT BEAT THE TIME!"); //notification will pop??
         } else {
-            document.getElementById("countDown").innerHTML = "CLOCK IS TICKING: " + timeleft + " SECONDS";
+            document.getElementById("countDown").innerHTML = "CLOCK IS TICKING: " + timeleft + " SECONDS"; //timeleft is greater than 30 so it will go down to 0//
 
         }
-        timeleft -= 1;
+        timeleft -= 1; //30 will be subtracted by 1//
 
-    }, 1000);
+    }, 1000); //milliseconds which mean every second 30 will go down by one//
 }
 
 //Enter keyboard//
@@ -37,7 +37,7 @@ document.addEventListener('keyup', function (e) {
     if (e.key === "Enter") {
         playerOne++;
         document.getElementById("clicks").innerHTML = playerOne;
-    } if (playerOne >= 5) {
+    } if (playerOne >= 100) {
         document.getElementById("clicks").innerHTML = "YOU ARE THE WINNER!";
         window.alert("PLAYER ONE IS THE WINNER! PRESS THE 'RESTART HERE!' TO PLAY AGAIN!");
         clearInterval(downloadTimer);
@@ -52,7 +52,7 @@ document.addEventListener('keyup', function (e) {
     if (e.key === " ") {
         playerTwo++;
         document.getElementById("press").innerHTML = playerTwo;
-    } if (playerTwo >= 5) {
+    } if (playerTwo >= 100) {
         document.getElementById("press").innerHTML = "YOU ARE THE WINNER!";
         window.alert("PLAYER TWO IS THE WINNER! PRESS THE 'RESTART HERE!' TO PLAY AGAIN!");
         clearInterval(downloadTimer);
